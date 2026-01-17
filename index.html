@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Big 5 Safaris Adventures – Experience unforgettable African safaris in Kenya." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Big 5 Safaris Adventures</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .slider {
+      display: flex;
+      width: max-content;
+      animation: scroll 25s linear infinite;
+    }
+
+    .hero-bg {
+      background-image: url("images/hero\ .jpg");
+    }
+  </style>
+</head>
+
+<body class="bg-green-900 text-gray-900">
+
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-green-900 text-white py-4 px-6 mx-auto max-w-7xl 
+ shadow-lg flex justify-between items-center mt-4 relative">
+
+  <!-- Desktop Left -->
+  <div class="hidden md:flex gap-6">
+    <a href="#booking" class="hover:text-yellow-300">Booking</a>
+    <a href="#feedback" class="hover:text-yellow-300">Feedback</a>
+  </div>
+
+  <!-- Logo -->
+  <h1 class="text-2xl font-bold">Big 5 Safaris</h1>
+
+  <!-- Desktop Right -->
+  <div class="hidden md:flex gap-6">
+    <a href="#partners" class="hover:text-yellow-300">Partners</a>
+    <a href="#contact" class="hover:text-yellow-300">Contact</a>
+  </div>
+
+  <!-- Mobile Button -->
+  <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">☰</button>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-green-900 rounded-b-xl shadow-lg md:hidden">
+    <a href="#booking" class="block px-6 py-3 hover:bg-green-800">Booking</a>
+    <a href="#feedback" class="block px-6 py-3 hover:bg-green-800">Feedback</a>
+    <a href="#partners" class="block px-6 py-3 hover:bg-green-800">Partners</a>
+    <a href="#contact" class="block px-6 py-3 hover:bg-green-800">Contact</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="h-screen flex items-center justify-center bg-cover bg-center hero-bg">
+  <div class="bg-black/60 p-10 rounded-xl shadow-xl text-center text-white max-w-xl">
+    <h2 class="text-5xl font-extrabold mb-4">Explore Africa’s Big 5</h2>
+    <p class="text-lg mb-8">
+      Join us for unforgettable safaris into the heart of the African wilderness.
+    </p>
+    <a href="#booking" class="inline-block bg-yellow-400 text-green-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+      Book Your Safari
+    </a>
+  </div>
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+<section id="booking" class="py-20 px-4">
+  <div class="max-w-3xl mx-auto bg-white shadow-xl rounded-lg p-8">
+    <h2 class="text-4xl font-bold text-center mb-8 text-green-900">Book Your Safari</h2>
+
+    <form action="https://formspree.io/f/mlezvdry" method="POST" class="space-y-4">
+      
+      <input required type="text" name="name" placeholder="Full Name" class="w-full border px-4 py-2 rounded" />
+      <input required type="email" name="email" placeholder="Email Address" class="w-full border px-4 py-2 rounded" />
+      <input required type="tel" name="phone" placeholder="Phone Number" class="w-full border px-4 py-2 rounded" />
+
+      <select required name="tour" class="w-full border px-4 py-2 rounded">
+        <option value="">Choose Safari</option>
+        <option>Lion Safari</option>
+        <option>Elephant Expedition</option>
+        <option>Leopard Tracking</option>
+      </select>
+
+      <input required type="date" name="date" class="w-full border px-4 py-2 rounded" />
+
+      <textarea name="message" rows="4" placeholder="Additional Notes" class="w-full border px-4 py-2 rounded"></textarea>
+
+      <button class="w-full bg-green-900 text-white py-3 rounded hover:bg-green-800 transition">
+        Submit Booking
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FEEDBACK ================= -->
+<section id="feedback" class="relative py-20 px-6 bg-cover bg-center"
+style="background-image: url('images/Guardian\ of\ the\ Savannah\ –\ A\ Sunset\ Tale.jpg');">
+<div class="absolute inset-0 bg-green-900 bg-opacity-30"></div>
+  <div class="relative-z-10 max-w-6xl mx-auto text-black">
+  <h2 class="text-4xl font-bold text-center mb-10 text-green-900">Guest Feedback</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-green-100 p-6 rounded-lg shadow text-center italic">
+      “An unforgettable experience! We saw all Big 5.”
+      <p class="mt-4 font-bold not-italic">— Sarah M.</p>
+    </div>
+    <div class="bg-green-100 p-6 rounded-lg shadow text-center italic">
+      “Seamless booking and incredible guides.”
+      <p class="mt-4 font-bold not-italic">— John D.</p>
+    </div>
+    <div class="bg-green-100 p-6 rounded-lg shadow text-center italic">
+      “Safe, fun and educational safari.”
+      <p class="mt-4 font-bold not-italic">— Amina Y.</p>
+    </div>
+     <div class="bg-green-100 p-6 rounded-lg shadow text-center italic">
+      “Amazing campaign sites.”
+      <p class="mt-4 font-bold not-italic">— Fifi.</p>
+    </div>
+     <div class="bg-green-100 p-6 rounded-lg shadow text-center italic">
+      “Affordable and unforgettable.”
+      <p class="mt-4 font-bold not-italic">— Ruth.</p>
+    </div>
+     <div class="bg-green-100 p-6 rounded-lg shadow text-center italic">
+      “Adventures in the wild.”
+      <p class="mt-4 font-bold not-italic">— Benjamin.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="py-20 bg-green-900px-6">
+  <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow">
+    <h2 class="text-3xl font-bold text-center mb-6 text-green-900">FAQs</h2>
+    <details class="mb-4">
+      <summary class="font-semibold cursor-pointer">What’s included?</summary>
+      <p class="mt-2">Accommodation, meals, guides and game drives.</p>
+    </details>
+    <details class="mb-4">
+      <summary class="font-semibold cursor-pointer">Are children allowed?</summary>
+      <p class="mt-2">Yes, we offer family-friendly packages.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 bg-green-900 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+    <div class="bg-green-100 p-6 rounded-lg shadow">
+      <h3 class="text-2xl font-bold mb-4">Contact Info</h3>
+      <p>Email: info@big5safaris.com</p>
+      <p>Phone: +254 712 345 678</p>
+      <p>Nairobi, Kenya</p>
+    </div>
+
+    <div class="bg-green-100 p-6 rounded-lg shadow">
+      <h3 class="text-2xl font-bold mb-4">Message Us</h3>
+      <input class="w-full border px-4 py-2 rounded mb-3" placeholder="Name">
+      <input class="w-full border px-4 py-2 rounded mb-3" placeholder="Email">
+      <textarea class="w-full border px-4 py-2 rounded mb-3" rows="4" placeholder="Message"></textarea>
+      <button class="bg-green-900 text-white px-6 py-2 rounded">Send</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARTNERS ================= -->
+<section id="partners" class="py-20 bg-black-50">
+  <h2 class="text-4xl font-bold text-center text-white mb-10">Our Partners</h2>
+  <div class="overflow-hidden">
+    <div class="slider gap-10 px-6">
+      <img src="images/African Safari Logo.jpg" class="h-20">
+      <img src="images/African Wildlife Report Logo Design - 48hourslogo.jpg" class="h-20">
+      <img src="images/Safari.jpg" class="h-20">
+      <img src="images/Desert Safari - Adventures by Fida Khattak _ Creative Market.jpg" class="h-20">
+      <img src="images/African Safari Logo.jpg" class="h-20">
+      <img src="images/Desert Safari - Adventures by Fida Khattak _ Creative Market.jpg" class="h-20">
+      <img src="images/African Safari Zoo Custom Logo Design.jpg" class="h-20">
+      <img src="images/Safari.jpg" class="h-20">
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+ <section id="contact" class="py-20 bg-green-900 px-6">
+  
+    <section id="footer" class="py-20 bg-green-900 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+    <div class="bg-green-100 p-6 rounded-lg shadow">
+      <h3 class="text-2xl font-bold mb-4">Our address</h3>
+      <p> located at:Machakos</p>
+      <p>P.O- Box 12345</p>
+      <p>Nairobi, Kenya</p>
+    </div>
+<footer class="bg-white text-white py-10 text-center">
+  <p class="text-sm text-green-900">
+      located at:Machakos
+      P.O- Box 1234
+      Nairobi, Kenya
+    © 2025 Big 5 Safaris Adventures</p>
+</footer>
+
+<!-- ================= WHATSAPP BUTTON ================= -->
+
+<a
+  href="https://wa.me/254712345678?text=Hello%20Big%205%20Safaris,%20I%20would%20like%20to%20book%20a%20safari."
+  target="_blank"
+  class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg z-50">
+  📱 WhatsApp Booking
+</a>
+
+<!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
